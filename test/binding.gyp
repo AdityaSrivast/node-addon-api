@@ -57,6 +57,9 @@
         'reference.cc',
         'version_management.cc',
         'thunking_manual.cc',
+        'symbol.cc',
+        'even_odd.cc',
+        'palindrome.cc',
       ],
       'conditions': [
         ['disable_deprecated!="true"', {
