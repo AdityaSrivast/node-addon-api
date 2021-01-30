@@ -39,6 +39,7 @@ Object InitName(Env env);
 Object InitObject(Env env);
 Object InitSymbol(Env env);
 Object InitEvenOdd(Env env);
+Object InitPalindrome(Env env);
 #ifndef NODE_ADDON_API_DISABLE_DEPRECATED
 Object InitObjectDeprecated(Env env);
 #endif // !NODE_ADDON_API_DISABLE_DEPRECATED
@@ -107,6 +108,7 @@ Object Init(Env env, Object exports) {
   exports.Set("object", InitObject(env));
   exports.Set("symbol", InitSymbol(env));
   exports.Set("even_odd", InitEvenOdd(env));
+  exports.Set("palindrome", InitPalindrome(env));
 #ifndef NODE_ADDON_API_DISABLE_DEPRECATED
   exports.Set("object_deprecated", InitObjectDeprecated(env));
 #endif // !NODE_ADDON_API_DISABLE_DEPRECATED
